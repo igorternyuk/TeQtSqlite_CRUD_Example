@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>760</width>
+    <height>718</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>760</width>
+    <height>718</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QTableView" name="tableView">
+        <property name="minimumSize">
+         <size>
+          <width>540</width>
+          <height>690</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="minimumSize">
+           <size>
+            <width>190</width>
+            <height>340</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>190</width>
+            <height>340</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Search form</string>
+          </property>
+          <widget class="QDoubleSpinBox" name="spinBoxMaxSalary">
+           <property name="geometry">
+            <rect>
+             <x>81</x>
+             <y>221</y>
+             <width>101</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="maximum">
+            <double>999999999.000000000000000</double>
+           </property>
+           <property name="value">
+            <double>100000.000000000000000</double>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btnSearch">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>250</y>
+             <width>171</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Search</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBoxAge">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>70</y>
+             <width>104</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Consider age</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_5">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>130</y>
+             <width>51</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Max age</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_7">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>221</y>
+             <width>65</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Max salary</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="spinBoxMinAge">
+           <property name="geometry">
+            <rect>
+             <x>68</x>
+             <y>100</y>
+             <width>55</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="minimum">
+            <number>0</number>
+           </property>
+           <property name="maximum">
+            <number>130</number>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="spinBoxMaxAge">
+           <property name="geometry">
+            <rect>
+             <x>67</x>
+             <y>130</y>
+             <width>55</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="minimum">
+            <number>0</number>
+           </property>
+           <property name="maximum">
+            <number>130</number>
+           </property>
+           <property name="value">
+            <number>130</number>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_6">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>190</y>
+             <width>66</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Min salary:</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="txtSearch">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>171</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>150</width>
+             <height>0</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QDoubleSpinBox" name="spinBoxMinSalary">
+           <property name="geometry">
+            <rect>
+             <x>82</x>
+             <y>190</y>
+             <width>101</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="minimum">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>999999999.000000000000000</double>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_4">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>100</y>
+             <width>52</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Min age:</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBoxSalary">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>160</y>
+             <width>118</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Consider salary</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="cmbSort">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>280</y>
+             <width>171</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="currentIndex">
+            <number>-1</number>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBoxDecOrder">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>310</y>
+             <width>85</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>CheckBox</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btnSort">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>310</y>
+             <width>80</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Sort</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="minimumSize">
+           <size>
+            <width>190</width>
+            <height>300</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>190</width>
+            <height>300</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Insertion form</string>
+          </property>
+          <widget class="QDoubleSpinBox" name="spinBoxSalary">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>90</y>
+             <width>123</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>123</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>123</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="maximum">
+            <double>99999999.000000000000000</double>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="spinBoxAge">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>59</y>
+             <width>123</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>123</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>123</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="minimum">
+            <number>16</number>
+           </property>
+           <property name="maximum">
+            <number>130</number>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="txtName">
+           <property name="geometry">
+            <rect>
+             <x>56</x>
+             <y>29</y>
+             <width>125</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>125</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>125</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_2">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>59</y>
+             <width>42</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>42</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>42</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Age:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>29</y>
+             <width>40</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Name:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_3">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>90</y>
+             <width>42</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>42</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>42</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Salary</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btnInsert">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>120</y>
+             <width>171</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>60</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Insert</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btnUpdate">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>150</y>
+             <width>171</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>60</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Update</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btnDelete">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>180</y>
+             <width>171</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>60</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Delete</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btnLoadCompleteList">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>210</y>
+             <width>173</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>173</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Load complete list</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btnQuit">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>270</y>
+             <width>171</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>60</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Quit</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btnClearForm">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>240</y>
+             <width>171</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Clear form</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <action name="action_edit_register">
+   <property name="text">
+    <string>Edit register</string>
+   </property>
+  </action>
+  <action name="action_remove_register">
+   <property name="text">
+    <string>Remove register</string>
+   </property>
+  </action>
+  <action name="action_load_full_list">
+   <property name="text">
+    <string>Load full list</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnQuit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>501</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>592</x>
+     <y>348</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
